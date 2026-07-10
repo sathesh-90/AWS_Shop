@@ -1,4 +1,4 @@
-# aws-ecommerce-demo
+# AWS-Ecommerce-Demo
 
 A beginner-friendly e-commerce demo that shows how a simple web application can be organized like a real AWS-based production project.
 
