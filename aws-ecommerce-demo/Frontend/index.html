@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS E-Commerce Demo</title>
+    <meta name="description" content="A beginner-friendly e-commerce demo built with FastAPI and AWS concepts." />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">CloudShop</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <div class="nav-links">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">AWS Learning Project</p>
+          <h1>Build, Deploy, and Learn Cloud Commerce</h1>
+          <p>
+            Explore a simple e-commerce storefront that highlights how modern web apps are organized using FastAPI, Docker, Terraform, and AWS.
+          </p>
+          <a class="button" href="#products">Shop Now</a>
+        </div>
+        <div class="hero-card">
+          <h3>What this demo teaches</h3>
+          <ul>
+            <li>Responsive frontend design</li>
+            <li>REST API development</li>
+            <li>Infrastructure as Code</li>
+            <li>Containerized deployment</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="products" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Products</p>
+          <h2>Popular items from the catalog</h2>
+        </div>
+        <div id="productsGrid" class="products-grid">
+          <div class="loading" id="loadingState">Loading products...</div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">About This Project</p>
+            <h2>Designed for beginners and cloud learners</h2>
+            <p>
+              This project is intentionally simple so you can understand the pieces of a full-stack application without getting overwhelmed.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Architecture Highlights</h3>
+            <ul>
+              <li>Frontend served as a static experience</li>
+              <li>FastAPI exposing product data</li>
+              <li>Terraform for AWS provisioning</li>
+              <li>Docker for portable deployment</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Questions about the project?</h2>
+        </div>
+        <form class="contact-card">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea rows="4" placeholder="Tell us what you want to learn"></textarea>
+          </label>
+          <button class="button" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© 2026 CloudShop Demo</p>
+        <p>Built for AWS learning and beginner-friendly development.</p>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
